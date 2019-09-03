@@ -1,0 +1,14 @@
+//
+// SASS Variables
+//
+
+$color: (
+    black: #141414,
+    white: #f9f9f9,
+    grey: #999,
+);
+
+@function color($colorName){
+    @return map-get($color, $colorName)
+}
+
