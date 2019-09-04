@@ -10,6 +10,9 @@ import { Route, Switch, Link } from 'react-router-dom';
 import './Styles/Global.scss';
 import './Styles/Variables.scss';
 
+//Scripts --
+import Test from './Scripts/Test';
+
 //Pages --
 import Home from './Components/Pages/Home/Home';
 import About from './Components/Pages/About/About';
@@ -19,6 +22,9 @@ import Expertise from './Components/Pages/Expertise/Expertise';
 import Project1 from './Components/Pages/Projects/Project1/Project1';
 
 //Constants --
+import Logo from './Components/Constants/Header/Logo/Logo';
+import MenuIcon from './Components/Constants/Header/MenuIcon/MenuIcon';
+import Navigation from './Components/Constants/Navigation/Navigation';
 
 
 
@@ -38,14 +44,9 @@ export default class GroundZero extends Component {
         return (
             <div className='GroundZero' id='GroundZero'>
 
-                <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/works">Works</Link>
-                    <Link to="/contact">Contact</Link>
-                    <Link to="/expertise">Expertise</Link>
-                    <Link to="/project/jannata-resort">Project 1</Link>
-                </nav>
+                    <Logo />
+                    <MenuIcon />
+                    <Navigation />
 
 
                 
