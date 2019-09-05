@@ -3,7 +3,7 @@
 //
 
 //React --
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 
 //Styles --
@@ -25,6 +25,7 @@ import Project1 from './Components/Pages/Projects/Project1/Project1';
 import Logo from './Components/Constants/Header/Logo/Logo';
 import MenuIcon from './Components/Constants/Header/MenuIcon/MenuIcon';
 import Navigation from './Components/Constants/Navigation/Navigation';
+import ScrollToTop from './Components/Constants/ScrollTop/ScrollToTop';
 
 
 
@@ -36,31 +37,66 @@ export default class GroundZero extends Component {
     constructor(props){
         super(props);
         this.state = {
-
+            NavStatus: false,
         }
     }
 
+    
+
     render() {
+
+        //Handle Navigation
+        const OpenNavigation = () => {
+          this.setState((prevState) => {
+            return {NavStatus: !prevState.NavStatus}
+            console.log(this.state.NavStatus);
+            
+          });
+        }
+        const CloseNavigation = () => {
+            this.setState({ NavStatus: false });
+            console.log(this.state.NavStatus);
+        }
+
         return (
             <div className='GroundZero' id='GroundZero'>
 
+                <ScrollToTop>
+
                     <Logo />
-                    <MenuIcon />
-                    <Navigation />
+                    <MenuIcon 
+                        NavigationStatus={this.state.NavStatus}
+                        CloseNavigation={CloseNavigation}
+                        OpenNavigation={OpenNavigation}
+                    />
+                    <Navigation 
+                        NavigationStatus={this.state.NavStatus}
+                    />
+
+                    <div className='TempNav'>
+                        <Link to='/' className='TempNav-Link'>Home</Link>
+                        <Link to='/about' className='TempNav-Link'>About</Link>
+                        <Link to='/works' className='TempNav-Link'>Works</Link>
+                        <Link to='/expertise' className='TempNav-Link'>Expertise</Link>
+                        <Link to='/contact' className='TempNav-Link'>Contact</Link>
+                        <Link to='/project/jannata-resort' className='TempNav-Link'>Project</Link>
+                    </div>
+
 
 
                 
                     <Switch>
 
                         <Route path="/" exact component={Home}/>
-                        <Route path="/about" exact component={About}/>
-                        <Route path="/works" exact component={Works}/>
-                        <Route path="/contact" exact component={Contact}/>
-                        <Route path="/expertise" exact component={Expertise}/>
-                        <Route path="/project/jannata-resort" exact component={Project1}/>
+                        <Route path="/about" component={About}/>
+                        <Route path="/works" component={Works}/>
+                        <Route path="/contact" component={Contact}/>
+                        <Route path="/expertise" component={Expertise}/>
+                        <Route path="/project/jannata-resort" component={Project1}/>
 
                     </Switch>
 
+                </ScrollToTop>
 
             </div>
         )

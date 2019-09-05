@@ -2,12 +2,68 @@
 //About Styles
 //
 
+@import '../../../Styles/Variables.scss';
+
 .About {
     width: 100%;
-    height: 100vh;
-    background-color: burlywood;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
 }
 
-.AboutHeader {
-    color: aquamarine;
+    .About_Inner {
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        position: relative;
+    }
+
+        .About_Header {
+            font-size: 350px;
+            margin-left: 167px;
+            font-weight: 500;
+            margin-bottom: 150px;
+            color: indianred;
+        }
+
+            
+@media screen and (max-height: 700px){
+    .About {
+        padding-top: 150px;
+    }
+    .About_Header {
+        font-size: 280px;
+        margin-left: 74px;
+    }
 }
+
+@media screen and (max-width: 1400px){
+    .About {
+        padding-top: 150px;
+    }
+    .About_Header {
+        font-size: 280px;
+        margin-left: 74px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .About_Header {
+        font-size: 30vw;
+        margin-left: 40px;
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 500px){
+    .About {
+        padding-top: 150px;
+    }
+    .About_Header {
+        font-size: 30vw;
+        margin-left: 22px;
+        margin-bottom: 80px;
+    }
+}
+
+        

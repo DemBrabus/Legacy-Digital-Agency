@@ -14,8 +14,14 @@
     height: 100vh;
     background-color: color(DeepBlack);
     z-index: 900;
-
+    opacity: 0;
     display: none;
+    transition: all .8s ease-in;
+}
+
+.NavigationActive {
+    display: block;
+    opacity: 1;
 }
 
     .Navigation_Inner {

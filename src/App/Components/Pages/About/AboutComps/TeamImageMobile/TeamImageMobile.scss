@@ -1,0 +1,48 @@
+//
+//Team Image Mobile Styles
+//
+
+@import '../../../../../Styles/Variables.scss';
+
+.TeamImageMobile {
+    width: 100%;
+    display: none;
+    position: relative;
+    color: color(black);
+    padding-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+    .About_Team-Image-Section-Content-Text--Mobile {
+        font-size: 7vw;
+        font-weight: 600;
+    }
+    .About_Team-Image-Section-SubText-Wrap--Mobile {
+        margin-top: 20px;
+    }
+    .About_Team-Image-Section-SubText--Mobile {
+        font-size: 16px;
+        color: color(black);
+    }
+        .About_Team-Image-Section-SubText--Mobile:hover {
+            opacity: .5;
+        }
+
+
+@media screen and (max-width: 700px){
+    .TeamImageMobile {
+        display: block;
+    }
+    .About_Team-Image-Section-Content-Text {
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .TeamImageMobile {
+        padding-left: 30px;
+    }
+    .About_Team-Image-Section-SubText--Mobile {
+        font-size: 12px;
+    }
+}

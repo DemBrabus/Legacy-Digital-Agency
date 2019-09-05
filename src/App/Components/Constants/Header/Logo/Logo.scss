@@ -5,7 +5,7 @@
 @import '../../../../Styles/Variables.scss';
 
 .Logo {
-    position: absolute;
+    position: fixed;
     left: 200px;
     top: 100px;
     color: color(white);
@@ -13,6 +13,7 @@
     font-weight: 400;
     text-transform: uppercase;
     z-index: 800;
+    mix-blend-mode: difference;
 }
 
 @media screen and (max-height: 700px){

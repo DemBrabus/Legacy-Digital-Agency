@@ -15,7 +15,7 @@ export default function Home() {
 
     useEffect(() => {
 
-        console.log(Contact);
+        
         
         // TweenMax.to(Contact, .5, {x: 100, ease: Power1.easeIn})
 
