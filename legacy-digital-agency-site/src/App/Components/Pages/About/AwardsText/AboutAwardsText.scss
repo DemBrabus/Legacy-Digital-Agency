@@ -1,0 +1,79 @@
+//
+//About Awards Text Styles
+//
+
+.About_Awards-Text {
+    width: 100%;
+    padding: 0 300px;
+}
+
+    .About_Awards-Title-Wrap {
+        width: 100%;
+    }
+
+        .About_Awards-Title-Text {
+            font-size: 50px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+    .About_Awards-Text-Text-Wrap {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .About_Awards-Text-Text {
+            width: 50%;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+@media screen and (max-height: 700px){
+    .About_Awards-Text {
+        padding: 0 150px;
+    }
+    .About_Awards-Title-Text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .About_Awards-Text {
+        padding: 0 150px;
+    }
+    .About_Awards-Title-Text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .About_Awards-Text {
+        padding: 0 60px;
+    }
+    .About_Awards-Title-Text {
+        font-size: 40px;
+    }
+    .About_Awards-Text-Text-Wrap {
+        margin-top: 60px;
+    }
+    .About_Awards-Text-Text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .About_Awards-Title-Text {
+        font-size: 6vw;
+    }
+    .About_Awards-Text-Text {
+        font-size: 5vw;
+        line-height: 8vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .About_Awards-Text {
+        padding: 0 30px;
+    }
+}

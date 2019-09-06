@@ -1,0 +1,81 @@
+//
+// About Services Styles
+//
+
+@import '../../../../Styles/Variables.scss';
+
+.About_Services {
+    width: 100%;
+    color: color(black);
+    position: relative;
+    padding: 0 300px;
+}
+
+    .About_Services-Title-Wrap {
+        width: 100%;
+    }
+
+        .About_Services-Title-Text {
+            font-size: 50px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+    .About_Services-Text-Text-Wrap {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .About_Services-Text-Text {
+            width: 50%;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+@media screen and (max-height: 700px){
+    .About_Services {
+        padding: 0 150px;
+    }
+    .About_Services-Title-Text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .About_Services {
+        padding: 0 150px;
+    }
+    .About_Services-Title-Text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .About_Services {
+        padding: 0 60px;
+    }
+    .About_Services-Text-Text-Wrap {
+        margin-top: 60px;
+    }
+    .About_Services-Text-Text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .About_Services-Title-Text {
+        font-size: 6vw;
+    }
+    .About_Services-Text-Text {
+        font-size: 5vw;
+        line-height: 8vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .About_Services {
+        padding: 0 30px;
+    }
+}

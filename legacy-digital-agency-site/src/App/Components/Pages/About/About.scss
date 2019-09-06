@@ -1,0 +1,121 @@
+//
+//About Styles
+//
+
+@import '../../../Styles/Variables.scss';
+
+
+.About {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+    .About_Inner {
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        position: relative;
+    }
+
+        .About_Header {
+            font-size: 350px;
+            margin-left: 167px;
+            font-weight: 500;
+            margin-bottom: 150px;
+            color: indianred;
+        }
+
+        .About_Company-Logos-Wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .About_CompanyLogos {
+            width: 80%;
+            margin: 100px 0;
+        }
+
+        .About_CompanyLogosMobile {
+            width: 80%;
+            margin: 40px 0;
+            display: none;
+        }
+
+        .About_Black-Section {
+            width: 100%;
+            background-color: #000;
+            padding: 150px 0 80px 0;
+        }
+
+            .About_Awards-Posters {
+                width: 100%;
+                margin-top: 100px;
+            }
+
+            .About_Awards-Posters-Mobile {
+                width: 100%;
+                display: none;
+            }
+
+            
+@media screen and (max-height: 700px){
+    .About {
+        padding-top: 150px;
+    }
+    .About_Header {
+        font-size: 280px;
+        margin-left: 74px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .About {
+        padding-top: 150px;
+    }
+    .About_Header {
+        font-size: 280px;
+        margin-left: 74px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .About_Header {
+        font-size: 30vw;
+        margin-left: 40px;
+        margin-bottom: 100px;
+    }
+    .About_CompanyLogos {
+        display: none
+    }
+    .About_CompanyLogosMobile {
+        display: block;
+    }
+    .About_Awards-Posters {
+        display: none;
+    }
+    .About_Awards-Posters-Mobile {
+        display: block;
+    }
+}
+@media screen and (max-width: 700px){
+    .About_CompanyLogosMobile {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .About {
+        padding-top: 150px;
+    }
+    .About_Header {
+        font-size: 30vw;
+        margin-left: 22px;
+        margin-bottom: 80px;
+    }
+    .About_Black-Section {
+        padding: 80px 0;
+    }
+}
