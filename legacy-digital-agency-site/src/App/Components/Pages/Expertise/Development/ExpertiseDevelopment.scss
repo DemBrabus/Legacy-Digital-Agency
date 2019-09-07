@@ -1,0 +1,83 @@
+//
+//Expertise Development Styles
+//
+
+@import '../../../../Styles/Variables.scss';
+
+.Expertise_Development {
+    width: 100%;
+    background-color: #FFF;
+    color: color(black);
+    padding: 150px 350px;
+    padding-bottom: 80px;
+    display: flex;
+}
+
+    .Expertise_Development-Title {
+        font-size: 50px;
+        
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .Expertise_Development-Text-Wrap {
+        margin-top: 60px;
+        padding-left: 60px;
+    }
+
+    .Expertise_Development-Text {
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+
+@media screen and (max-width: 1600px){
+    .Expertise_Development {
+        padding: 150px 250px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .Expertise_Development {
+        padding: 150px 180px;
+    }
+    .Expertise_Development-Title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .Expertise_Development {
+        padding: 150px 120px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .Expertise_Development-Title {
+        font-size: 32px;
+    }
+    .Expertise_Development-Text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .Expertise_Development {
+        display: block;
+        padding: 100px 60px; 
+        padding-bottom: 40px;
+    }
+    .Expertise_Development-Text-Wrap {
+        padding: 0;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Expertise_Development {
+        padding: 100px 30px; 
+        padding-bottom: 40px;
+    }
+}

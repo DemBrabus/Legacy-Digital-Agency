@@ -6,6 +6,10 @@ import React from 'react';
 import './Expertise.scss';
 
 import ExpertiseBigImage from './BigImage/ExpertiseBigImage';
+import ExpertiseDesign from './Design/ExpertiseDesign';
+import ExpertiseDevelopment from './Development/ExpertiseDevelopment';
+import DevIcons from '../../../Assets/Expertise/DevIcons.png';
+import DevIconsMobile from '../../../Assets/Expertise/DevIconsMobile.png';
 
 export default function Expertise() {
     return (
@@ -24,6 +28,17 @@ export default function Expertise() {
                 </div>
 
                 <ExpertiseBigImage />
+
+                <ExpertiseDesign />
+
+                <ExpertiseDevelopment />
+
+                <div className='Expertise_DevLogos-Wrap'>
+                    <img src={DevIcons} className='Expertise_DevLogos' />
+                    <img src={DevIconsMobile} className='Expertise_DevLogos-Mobile' />
+                </div>
+
+                
 
             </div>
         </div>

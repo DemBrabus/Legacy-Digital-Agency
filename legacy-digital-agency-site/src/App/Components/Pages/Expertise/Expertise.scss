@@ -40,6 +40,22 @@
                 line-height: 40px;
             }
 
+        .Expertise_DevLogos-Wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #FFF;
+        }
+
+            .Expertise_DevLogos {
+                width: 80%;
+            }
+            
+            .Expertise_DevLogos-Mobile {
+                display: none;
+                width: 100%;
+            }
+
 
 @media screen and (max-height: 700px){
     .Expertise_Header {
@@ -68,6 +84,10 @@
     .Expertise_Header-SubText {
         width: 100%;
         margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .Expertise_DevLogos {
+        width: 95%;
     }
 }
 
@@ -78,6 +98,16 @@
     .Expertise_Header-SubText {
         font-size: 16px;;
         line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .Expertise_DevLogos {
+        display: none;
+    }
+    .Expertise_DevLogos-Mobile {
+        display: block;
+        width: 850%;
     }
 }
 

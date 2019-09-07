@@ -2,7 +2,7 @@
 // Expertise Big Image Styles
 //
 
-.ExpertiseBigImage {
+.Expertise_BigImage {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -23,12 +23,50 @@
     .Expertise_BigImage-Text-Wrap {
         position: absolute;
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         z-index: 2;
     }
 
         .Expertise_BigImage-Text {
             margin-left: 200px;
-            font-size: 15vw;
+            font-size: 200px;
             font-weight: 600;
             mix-blend-mode: difference;
         }
+
+
+@media screen and (max-height: 700px){
+    .Expertise_BigImage-Text {
+        margin-left: 88px;
+    }
+}
+
+@media screen and (max-width: 1920px){
+    .Expertise_BigImage-Text {
+        font-size: 15vw;
+    }
+
+}
+@media screen and (max-width: 1400px){
+    .Expertise_BigImage-Text {
+        margin-left: 88px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .Expertise_BigImage-Text {
+        margin-left: 52px;
+        font-size: 21vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .Expertise_BigImage-Text {
+        margin-left: 26px
+    }
+    .Expertise_BigImage {
+        margin-top: 0;
+    }
+}
