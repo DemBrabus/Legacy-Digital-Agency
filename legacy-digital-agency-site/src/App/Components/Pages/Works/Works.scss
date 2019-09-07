@@ -2,11 +2,22 @@
 // Works Page Styles
 //
 
+@import '../../../Styles/Variables.scss';
+
 .Works {
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
+
+    .Works_Inner {
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        position: relative;
+    }
 
     .Works_BG-Project-Image-Wrap {
         position: fixed;
@@ -75,3 +86,118 @@
                 opacity: 1;
                 z-index: 5;
             }
+
+            
+
+    .Works_Project-Links-Wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+        .Works_Project-Links-Inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+            .Works_Project-Link-List {
+                padding-top: 200px;
+                padding-left: 400px;
+            }
+
+                .Works_Project-Link-List-Item {
+                    position: relative;
+                    margin-bottom: 60px;
+                    opacity: 1;
+                    transition: opacity .6s ease;
+                }
+
+                    .HideItem {
+                        opacity: .3
+                    }
+
+                    .Works_Project-Link-Number {
+                        position: absolute;
+                        left: 0;
+                        top: 40%;
+                        transform: translateY(-60%);
+                        font-size: 14px;
+                        font-weight: 300;
+                        transform: rotate(-90deg);
+                        transform-origin: bottom left;
+                    }
+
+                    .Works_Project-Link {
+                        font-size: 50px;
+                        color: color(white);
+                        font-weight: 700;
+                        margin-left: 40px;
+                        white-space: nowrap;
+                    }
+
+                    .Works_Project-Link-Description {
+                        margin-left: 40px;
+                        font-size: 14px;
+                        font-weight: 300;
+                        white-space: nowrap;
+                    }
+
+
+@media screen and (max-height: 700px){
+    .Works_Project-Link-List {
+        padding-left: 300px;
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .Works_Project-Link-List {
+        padding-left: 300px;
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .Works_Project-Link-List {
+        padding-left: 200px;
+        padding-top: 150px;
+    }
+    .Works_Project-Link {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .Works_Project-Link-List {
+        padding-left: 80px;
+        padding-top: 150px;
+    }
+    .Works_Project-Link {
+        font-size: 32px;
+    }
+    .Works_Project-Link-Number {
+        font-size: 12px;
+    }
+    .Works_Project-Link-Description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Works_Project-Link-List {
+        padding-left: 50px;
+    }
+    .Works_Project-Link {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+    .Works_Project-Link-Description {
+        margin-left: 20px;
+        font-weight: 200;
+    }
+    .Works_Project-Link-Number {
+        font-weight: 200;
+    }
+}
