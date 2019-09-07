@@ -4,26 +4,24 @@
 
 @import '../../../../Styles/Variables.scss';
 
-.Expertise_Design {
+.Expertise_BrandDev {
     width: 100%;
-    background-color: #FFF;
-    color: color(black);
     padding: 150px 350px;
     display: flex;
 }
 
-    .Expertise_Design-Title {
+    .Expertise_BrandDev-Title {
         font-size: 50px;
         
         font-weight: 600;
         white-space: nowrap;
     }
 
-    .Expertise_Design-Text-Wrap {
+    .Expertise_BrandDev-Text-Wrap {
         margin-top: 60px;
     }
 
-    .Expertise_Design-Text {
+    .Expertise_BrandDev-Text {
         margin-top: 40px;
         font-size: 20px;
         font-weight: 400;
@@ -32,51 +30,51 @@
 
 
 @media screen and (max-width: 1600px){
-    .Expertise_Design {
+    .Expertise_BrandDev {
         padding: 150px 250px;
     }
 }
 
 @media screen and (max-width: 1400px){
-    .Expertise_Design {
+    .Expertise_BrandDev {
         padding: 150px 180px;
     }
-    .Expertise_Design-Title {
+    .Expertise_BrandDev-Title {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 1400px){
-    .Expertise_Design {
+    .Expertise_BrandDev {
         padding: 150px 120px;
     }
 }
 
 @media screen and (max-width: 1200px){
-    .Expertise_Design-Title {
+    .Expertise_BrandDev-Title {
         font-size: 32px;
     }
-    .Expertise_Design-Text {
+    .Expertise_BrandDev-Text {
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 900px){
-    .Expertise_Design {
+    .Expertise_BrandDev {
         display: block;
         padding: 100px 60px; 
     }
-    .Expertise_Design-Text-Wrap {
+    .Expertise_BrandDev-Text-Wrap {
         padding: 0;
         margin-top: 40px;
     }
 }
 
 @media screen and (max-width: 500px){
-    .Expertise_Design {
+    .Expertise_BrandDev {
         padding: 100px 30px; 
     }
-    .Expertise_Design-Title {
+    .Expertise_BrandDev-Title {
         white-space: normal;
     }
 }

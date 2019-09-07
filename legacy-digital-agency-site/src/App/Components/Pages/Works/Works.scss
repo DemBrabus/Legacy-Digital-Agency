@@ -1,0 +1,77 @@
+//
+// Works Page Styles
+//
+
+.Works {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+    .Works_BG-Project-Image-Wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+        .Works_BG-Project-Image-Wrap-Inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+            .Works_BG-Project-Image {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 1;
+                transition: all .6s ease;
+                transition-property: opacity z-index;
+            }
+
+                .Works_BG-Project-Image-1 {
+                    background: url('../../../Assets/Works/ProjectBG-1.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .Works_BG-Project-Image-2 {
+                    background: url('../../../Assets/Works/ProjectBG-2.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .Works_BG-Project-Image-3 {
+                    background: url('../../../Assets/Works/ProjectBG-3.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .Works_BG-Project-Image-4 {
+                    background: url('../../../Assets/Works/ProjectBG-4.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .Works_BG-Project-Image-5 {
+                    background: url('../../../Assets/Works/ProjectBG-5.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+
+            .ProjectBG-Active {
+                opacity: 1;
+                z-index: 5;
+            }

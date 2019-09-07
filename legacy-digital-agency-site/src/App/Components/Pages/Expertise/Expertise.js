@@ -10,6 +10,8 @@ import ExpertiseDesign from './Design/ExpertiseDesign';
 import ExpertiseDevelopment from './Development/ExpertiseDevelopment';
 import DevIcons from '../../../Assets/Expertise/DevIcons.png';
 import DevIconsMobile from '../../../Assets/Expertise/DevIconsMobile.png';
+import ExpertiseBrandDev from './Brand/ExpertiseBrandDev';
+import Footer from '../../Reuseable/Footer/Footer';
 
 export default function Expertise() {
     return (
@@ -38,7 +40,9 @@ export default function Expertise() {
                     <img src={DevIconsMobile} className='Expertise_DevLogos-Mobile' />
                 </div>
 
-                
+                <ExpertiseBrandDev />
+
+                <Footer />
 
             </div>
         </div>
