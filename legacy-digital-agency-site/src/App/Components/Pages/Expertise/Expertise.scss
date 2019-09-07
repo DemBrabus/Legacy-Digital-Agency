@@ -1,0 +1,91 @@
+//
+//Expertise Styles
+//
+
+.Expertise {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+    .Expertise_Inner {
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        position: relative;
+    }
+
+        .Expertise_Header-Wrap {
+            width: 100%;
+        }
+
+            .Expertise_Header {
+                font-size: 8vw;
+                margin-left: 200px;
+                font-weight: 600;
+                color: indianred;
+            }
+
+        .Expertise_Header-SubText-Wrap {
+            width: 100%;
+            padding: 0 200px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            .Expertise_Header-SubText {
+                width: 40%;
+                font-size: 20px;
+                line-height: 40px;
+            }
+
+
+@media screen and (max-height: 700px){
+    .Expertise_Header {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .Expertise_Header {
+        margin-left: 100px;
+    }
+    .Expertise_Header-SubText {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .Expertise {
+        padding-top: 180px;
+    }
+    .Expertise_Header {
+        margin-left: 60px;
+    }
+    .Expertise_Header-SubText-Wrap {
+        padding: 0 60px;
+    }
+    .Expertise_Header-SubText {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Expertise_Header {
+        font-size: 10vw;
+    }
+    .Expertise_Header-SubText {
+        font-size: 16px;;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Expertise_Header {
+        margin-left: 36px;
+    }
+    .Expertise_Header-SubText-Wrap {
+        padding: 0 40px;
+    }
+}

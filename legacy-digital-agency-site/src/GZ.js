@@ -4,7 +4,7 @@
 
 //React --
 import React, { Component } from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 //Styles --
 import './App/Styles/Global.scss';
@@ -18,6 +18,8 @@ import './App/Styles/Variables.scss';
 import Home from './App/Components/Pages/Home/Home';
 import About from './App/Components/Pages/About/About';
 
+import Expertise from './App/Components/Pages/Expertise/Expertise';
+
 
 //Constants --
 import Logo from './App/Components/Constants/Header/Logo/Logo';
@@ -30,29 +32,53 @@ import Navigation from './App/Components/Constants/Navigation/Navigation';
 
 
 export default class GZ extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
       this.state = {
-
+        NavStatus: false
       }
   }
+
+
+
+
+  //Handle Nav State --
+    HandleNav = this.HandleNav.bind(this);
+    HandleNav(e){
+      this.setState((prevState) => {
+        return {NavStatus: !prevState.NavStatus}
+      });
+      
+    }
+
+
+  
+
 
   render() {
     return (
       <div className='GroundZero'>
         <ScrollToTop>
 
-          <Logo />
-          <MenuIcon />
-          <Navigation />
+          <Logo NavStatus={this.state.NavStatus}
+                />
+          <MenuIcon NavStatus={this.state.NavStatus}
+                    HandleNav={this.HandleNav}
+                  />
+          <Navigation NavStatus={this.state.NavStatus}
+                      HandleNav={this.HandleNav}
+                    />
 
+          <div className='GZ_Page-Container'>
+              <Switch>
 
-          <Switch>
+                <Route path='/' exact component={Home}/>
+                <Route path='/about' exact component={About}/>
 
-            <Route path='/' exact component={Home}/>
-            <Route path='/about' exact component={About}/>
+                <Route path='/expertise' exact component={Expertise}/>
 
-          </Switch>
+              </Switch>
+          </div>
 
         </ScrollToTop>
       </div>

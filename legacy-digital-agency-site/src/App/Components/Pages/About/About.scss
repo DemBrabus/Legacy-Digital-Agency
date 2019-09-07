@@ -2,8 +2,6 @@
 //About Styles
 //
 
-@import '../../../Styles/Variables.scss';
-
 
 .About {
     width: 100%;
@@ -21,7 +19,7 @@
     }
 
         .About_Header {
-            font-size: 350px;
+            font-size: 20vw;
             margin-left: 167px;
             font-weight: 500;
             margin-bottom: 150px;
@@ -67,7 +65,7 @@
         padding-top: 150px;
     }
     .About_Header {
-        font-size: 280px;
+        // font-size: 280px;
         margin-left: 74px;
     }
 }
@@ -77,14 +75,14 @@
         padding-top: 150px;
     }
     .About_Header {
-        font-size: 280px;
+        font-size: 25vw;
         margin-left: 74px;
     }
 }
 
 @media screen and (max-width: 900px){
     .About_Header {
-        font-size: 30vw;
+        // font-size: 30vw;
         margin-left: 40px;
         margin-bottom: 100px;
     }

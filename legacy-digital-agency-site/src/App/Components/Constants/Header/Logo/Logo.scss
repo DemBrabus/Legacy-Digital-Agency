@@ -12,9 +12,15 @@
     font-size: 40px;
     font-weight: 400;
     text-transform: uppercase;
+    opacity: 1;
     z-index: 800;
     mix-blend-mode: difference;
+    transition: opacity .5s ease-in;
 }
+
+    .HideLogo {
+        opacity: 0;
+    }
 
 @media screen and (max-height: 700px){
     .Logo {

@@ -28,23 +28,35 @@
 
         .MenuIcon-Bar {
             position: absolute;
-            height: .5px;
+            height: 1px;
             background-color: color(white);
             mix-blend-mode: difference;
+            transition: all .5s ease-in;
+            transition-property: top, width;
         }
 
             .MenuIcon-Bar1 {
                 top: 0;
                 width: 100%
             }
+                .Bar1-Active {
+                    top: 50%;
+                }
             .MenuIcon-Bar2 {
                 top: 50%;
                 width: 30%;
             }
+                .Bar2-Active {
+                    width: 100%;
+                }
             .MenuIcon-Bar3 {
                 top: 100%;
                 width: 70%;
             }
+                .Bar3-Active {
+                    top: 50%;
+                    width: 100%;
+                }
 
 
 @media screen and (max-height: 700px){
