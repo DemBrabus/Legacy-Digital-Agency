@@ -15,8 +15,6 @@ export default function ProjectIntro() {
             <div className='Project_Intro-Content-Wrap'>
                 <div className='Project_Intro-Content-Wrap-Inner'>
 
-                
-
                 <p className='Project_Intro-Scroll'>SCROLL</p>
 
                 <div className='Project_Intro-Info-Wrap'>
@@ -30,7 +28,6 @@ export default function ProjectIntro() {
                     <div className='Project_Intro-Website-Line'></div>
                     <p className='Project_Intro-Website'>VIEW WEBSITE</p>
                 </div>
-
 
                 </div>
             </div>
