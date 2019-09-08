@@ -23,7 +23,10 @@
             margin-left: 167px;
             font-weight: 500;
             margin-bottom: 150px;
-            color: indianred;
+            background: url('../../../Assets/LetterBG.jpg') no-repeat center left;
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .About_Company-Logos-Wrap {

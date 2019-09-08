@@ -162,8 +162,8 @@ export default class Works extends Component {
                                 </li>
                                 <li className={ListItem3}>
                                     <p className='Works_Project-Link-Number'>03</p>
-                                    <Link to='/project/jannata-resort' className='Works_Project-Link' onMouseOver={this.Project3Active} onMouseLeave={this.Project0Active}>The Relationshft</Link>
-                                    <p className='Works_Project-Link-Description'>UI / UX, APP - Amsterdam 2015</p>
+                                    <Link to='/project/jannata-resort' className='Works_Project-Link' onMouseOver={this.Project3Active} onMouseLeave={this.Project0Active}>Flo's Cafe</Link>
+                                    <p className='Works_Project-Link-Description'>UI / UX, APP - United States 2015</p>
                                 </li>
                                 <li className={ListItem4}>
                                     <p className='Works_Project-Link-Number'>04</p>

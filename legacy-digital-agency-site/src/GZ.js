@@ -19,6 +19,7 @@ import Home from './App/Components/Pages/Home/Home';
 import About from './App/Components/Pages/About/About';
 import Works from './App/Components/Pages/Works/Works';
 import Expertise from './App/Components/Pages/Expertise/Expertise';
+import Contact from './App/Components/Pages/Contact/Contact';
 
 
 //Constants --
@@ -77,6 +78,7 @@ export default class GZ extends Component {
                   <Route path='/about' exact component={About}/>
                   <Route path='/works' exact component={Works}/>
                   <Route path='/expertise' exact component={Expertise}/>
+                  <Route path='/contact' exact component={Contact}/>
 
                 </Switch>
             </div>
