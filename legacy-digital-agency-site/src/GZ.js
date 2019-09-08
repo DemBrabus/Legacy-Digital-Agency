@@ -20,6 +20,7 @@ import About from './App/Components/Pages/About/About';
 import Works from './App/Components/Pages/Works/Works';
 import Expertise from './App/Components/Pages/Expertise/Expertise';
 import Contact from './App/Components/Pages/Contact/Contact';
+import Project1 from './App/Components/Pages/Projects/Project1';
 
 
 //Constants --
@@ -27,6 +28,7 @@ import Logo from './App/Components/Constants/Header/Logo/Logo';
 import MenuIcon from './App/Components/Constants/Header/MenuIcon/MenuIcon';
 import ScrollToTop from './App/Components/Constants/ScrollToTop/ScrollToTop';
 import Navigation from './App/Components/Constants/Navigation/Navigation';
+
 
 
 //Transitions --
@@ -79,6 +81,7 @@ export default class GZ extends Component {
                   <Route path='/works' exact component={Works}/>
                   <Route path='/expertise' exact component={Expertise}/>
                   <Route path='/contact' exact component={Contact}/>
+                  <Route path='/project/jannata-resort' exact component={Project1}/>
 
                 </Switch>
             </div>
