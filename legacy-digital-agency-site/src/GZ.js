@@ -4,7 +4,7 @@
 
 //React --
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 
 //Styles --
 import './App/Styles/Global.scss';
@@ -56,13 +56,19 @@ export default class GZ extends Component {
     }
 
 
-  
-
 
   render() {
     return (
       <ScrollToTop>
         <div className='GroundZero'>
+{/* 
+          <nav className='TempNav'>
+            <Link to='/home' className='TempNav-Link'>Home</Link>
+            <Link to='/about' className='TempNav-Link'>About</Link>
+            <Link to='/works' className='TempNav-Link'>Works</Link>
+            <Link to='/expertise' className='TempNav-Link'>Expertise</Link>
+            <Link to='/contact' className='TempNav-Link'>Contact</Link>
+          </nav> */}
 
             <Logo NavStatus={this.state.NavStatus}
                   />
@@ -74,6 +80,8 @@ export default class GZ extends Component {
                       />
 
             <div className='GZ_Page-Container'>
+              
+              
                 <Switch>
 
                   <Route path='/' exact component={Home}/>

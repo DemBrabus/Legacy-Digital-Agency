@@ -1,0 +1,101 @@
+//
+//Project next Project Styles
+//
+
+@import '../../../../Styles/Variables.scss';
+
+.Project_NextProject {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+    .Project_NextProject-BG {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('../../../../Assets/Works/ProjectBG-3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .Project_NextProject-Content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+        .Project_NextProject-Link-Wrap {
+            position: absolute;
+            bottom: 250px;
+            left: 200px;
+            transition: opacity .5s ease;
+            z-index: 3;
+        }
+            .Project_NextProject-Link-Wrap:hover {
+                opacity: .3;
+            }
+
+            .Project_NextProject-Link-SubText {
+                font-size: 16px;
+            }
+
+            .Project_NextProject-Link {
+                font-size: 70px;
+                color: color(white);
+                font-weight: 600;
+            }
+
+
+@media screen and (max-height: 700px){
+    .Project_NextProject-Link-Wrap {
+        bottom: 150px;
+        left: 105px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .Project_NextProject-Link-Wrap {
+        bottom: 150px;
+        left: 105px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .Project_NextProject-Link-Wrap {
+        bottom: 300px;
+        left: 60px;
+    }
+    .Project_NextProject-Link {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .Project_NextProject-Link-Wrap {
+        bottom: 300px;
+        left: 30px;
+    }
+    .Project_NextProject-Link {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-height: 900px) and (max-width: 600px){
+    .Project_NextProject-Link-Wrap {
+        bottom: 130px;
+    }
+    
+}
+
+@media screen and (max-height: 700px) and (max-width: 550px){
+    .Project_NextProject-Link-SubText {
+        font-size: 14px;
+    }
+    .Project_NextProject-Link {
+        font-size: 38px;
+    }
+}

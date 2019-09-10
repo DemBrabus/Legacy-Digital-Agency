@@ -21,6 +21,8 @@ import AboutAwardsText from './AwardsText/AboutAwardsText';
 import Footer from '../../Reuseable/Footer/Footer';
 
 export default function About() {
+
+    console.log(window.scrollY)
     return (
         <div className='About' id='About'>
             <div className='About_Inner'>

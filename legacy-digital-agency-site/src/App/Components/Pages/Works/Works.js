@@ -15,6 +15,14 @@ export default class Works extends Component {
         }
     }
 
+    componentDidMount(){
+        console.log(window.scrollY);
+    }
+
+    
+    
+
+
     Project0Active = this.Project0Active.bind(this);
     Project1Active = this.Project1Active.bind(this);
     Project2Active = this.Project2Active.bind(this);
@@ -58,6 +66,9 @@ export default class Works extends Component {
     
     render() {
 
+        console.log(window.scrollY);
+        
+
         //Image Container Classes
             let Project1Image = 'Works_BG-Project-Image Works_BG-Project-Image-1';
             let Project2Image = 'Works_BG-Project-Image Works_BG-Project-Image-2';
@@ -68,15 +79,15 @@ export default class Works extends Component {
         if(this.state.ActiveProject === 1){
             Project1Image = 'Works_BG-Project-Image Works_BG-Project-Image-1 ProjectBG-Active'
         }
-        if(this.state.ActiveProject === 2){
-            Project2Image = 'Works_BG-Project-Image Works_BG-Project-Image-2 ProjectBG-Active'
-        }
-        if(this.state.ActiveProject === 3){
-            Project3Image = 'Works_BG-Project-Image Works_BG-Project-Image-3 ProjectBG-Active'
-        }
-        if(this.state.ActiveProject === 4){
-            Project4Image = 'Works_BG-Project-Image Works_BG-Project-Image-4 ProjectBG-Active'
-        }
+            if(this.state.ActiveProject === 2){
+                Project2Image = 'Works_BG-Project-Image Works_BG-Project-Image-2 ProjectBG-Active'
+            }
+                if(this.state.ActiveProject === 3){
+                    Project3Image = 'Works_BG-Project-Image Works_BG-Project-Image-3 ProjectBG-Active'
+                }
+            if(this.state.ActiveProject === 4){
+                Project4Image = 'Works_BG-Project-Image Works_BG-Project-Image-4 ProjectBG-Active'
+            }
         if(this.state.ActiveProject === 5){
             Project5Image = 'Works_BG-Project-Image Works_BG-Project-Image-5 ProjectBG-Active'
         }
@@ -88,37 +99,37 @@ export default class Works extends Component {
             let ListItem4 = 'Works_Project-Link-List-Item';
             let ListItem5 = 'Works_Project-Link-List-Item';
 
-            //List Item 1 Active
-            if(this.state.ActiveProject === 1){
-                ListItem2 = 'Works_Project-Link-List-Item HideItem';
-                ListItem3 = 'Works_Project-Link-List-Item HideItem';
-                ListItem4 = 'Works_Project-Link-List-Item HideItem';
-                ListItem5 = 'Works_Project-Link-List-Item HideItem';
-            }
+                //List Item 1 Active
+                if(this.state.ActiveProject === 1){
+                    ListItem2 = 'Works_Project-Link-List-Item HideItem';
+                    ListItem3 = 'Works_Project-Link-List-Item HideItem';
+                    ListItem4 = 'Works_Project-Link-List-Item HideItem';
+                    ListItem5 = 'Works_Project-Link-List-Item HideItem';
+                }
 
-            //List Item 2 Active
-            if(this.state.ActiveProject === 2){
-                ListItem1 = 'Works_Project-Link-List-Item HideItem';
-                ListItem3 = 'Works_Project-Link-List-Item HideItem';
-                ListItem4 = 'Works_Project-Link-List-Item HideItem';
-                ListItem5 = 'Works_Project-Link-List-Item HideItem';
-            }
+                    //List Item 2 Active
+                    if(this.state.ActiveProject === 2){
+                        ListItem1 = 'Works_Project-Link-List-Item HideItem';
+                        ListItem3 = 'Works_Project-Link-List-Item HideItem';
+                        ListItem4 = 'Works_Project-Link-List-Item HideItem';
+                        ListItem5 = 'Works_Project-Link-List-Item HideItem';
+                    }
 
-            //List Item 3 Active
-            if(this.state.ActiveProject === 3){
-                ListItem1 = 'Works_Project-Link-List-Item HideItem';
-                ListItem2 = 'Works_Project-Link-List-Item HideItem';
-                ListItem4 = 'Works_Project-Link-List-Item HideItem';
-                ListItem5 = 'Works_Project-Link-List-Item HideItem';
-            }
+                        //List Item 3 Active
+                        if(this.state.ActiveProject === 3){
+                            ListItem1 = 'Works_Project-Link-List-Item HideItem';
+                            ListItem2 = 'Works_Project-Link-List-Item HideItem';
+                            ListItem4 = 'Works_Project-Link-List-Item HideItem';
+                            ListItem5 = 'Works_Project-Link-List-Item HideItem';
+                        }
 
-            //List Item 4 Active
-            if(this.state.ActiveProject === 4){
-                ListItem1 = 'Works_Project-Link-List-Item HideItem';
-                ListItem2 = 'Works_Project-Link-List-Item HideItem';
-                ListItem3 = 'Works_Project-Link-List-Item HideItem';
-                ListItem5 = 'Works_Project-Link-List-Item HideItem';
-            }
+                //List Item 4 Active
+                if(this.state.ActiveProject === 4){
+                    ListItem1 = 'Works_Project-Link-List-Item HideItem';
+                    ListItem2 = 'Works_Project-Link-List-Item HideItem';
+                    ListItem3 = 'Works_Project-Link-List-Item HideItem';
+                    ListItem5 = 'Works_Project-Link-List-Item HideItem';
+                }
 
             //List Item 5 Active
             if(this.state.ActiveProject === 5){
@@ -129,7 +140,6 @@ export default class Works extends Component {
             }
 
 
-        console.log(this.state.ActiveProject);
         
     return (
             <div className='Works' >
@@ -150,6 +160,9 @@ export default class Works extends Component {
                     <div className='Works_Project-Links-Wrap'>
                         <div className='Works_Project-Links-Inner'>
                             <ul className='Works_Project-Link-List'>
+                                <li className='Works_Project-Link-List-Item-Disclaimer'>
+                                    <p className='Works_Project-Link-List-Item-Disclaimer-Text'>*ALL PROJECT LINKS LEAD TO JANNATA RESORT</p>
+                                </li>
                                 <li className={ListItem1}>
                                     <p className='Works_Project-Link-Number'>01</p>
                                     <Link to='/project/jannata-resort' className='Works_Project-Link' onMouseOver={this.Project1Active} onMouseLeave={this.Project0Active}>Samsara Resort</Link>
@@ -163,7 +176,7 @@ export default class Works extends Component {
                                 <li className={ListItem3}>
                                     <p className='Works_Project-Link-Number'>03</p>
                                     <Link to='/project/jannata-resort' className='Works_Project-Link' onMouseOver={this.Project3Active} onMouseLeave={this.Project0Active}>Flo's Cafe</Link>
-                                    <p className='Works_Project-Link-Description'>UI / UX, APP - United States 2015</p>
+                                    <p className='Works_Project-Link-Description'>UI / UX, APP - UNITED STATES, 2015</p>
                                 </li>
                                 <li className={ListItem4}>
                                     <p className='Works_Project-Link-Number'>04</p>
