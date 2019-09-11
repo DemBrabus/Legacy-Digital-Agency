@@ -13,15 +13,7 @@ export default class Works extends Component {
         this.state = {
             ActiveProject : 0
         }
-    }
-
-    componentDidMount(){
-        console.log(window.scrollY);
-    }
-
-    
-    
-
+    }    
 
     Project0Active = this.Project0Active.bind(this);
     Project1Active = this.Project1Active.bind(this);
@@ -65,9 +57,6 @@ export default class Works extends Component {
 
     
     render() {
-
-        console.log(window.scrollY);
-        
 
         //Image Container Classes
             let Project1Image = 'Works_BG-Project-Image Works_BG-Project-Image-1';
@@ -144,8 +133,6 @@ export default class Works extends Component {
     return (
             <div className='Works' >
                 <div className='Works_Inner'>
-
-                
 
                     <div className='Works_BG-Project-Image-Wrap'>
                         <div className='Works_BG-Project-Image-Wrap-Inner'>

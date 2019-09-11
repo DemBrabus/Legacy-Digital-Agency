@@ -14,8 +14,6 @@ import ExpertiseBrandDev from './Brand/ExpertiseBrandDev';
 import Footer from '../../Reuseable/Footer/Footer';
 
 export default function Expertise() {
-
-    console.log(window.scrollY)
     return (
         <div className='Expertise'>
             <div className='Expertise_Inner'>

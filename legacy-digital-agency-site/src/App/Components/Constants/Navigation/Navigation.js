@@ -21,9 +21,9 @@ export default function Navigation({ NavStatus, HandleNav }) {
 
                 <div className='Navigation_Divide-Line'></div>
 
-                    <NavSiteLinks HandleNav={HandleNav}/>
+                <NavSiteLinks HandleNav={HandleNav}/>
 
-                    <NavInfo />
+                <NavInfo />
 
             </div>
         </div>

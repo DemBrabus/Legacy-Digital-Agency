@@ -1,6 +1,12 @@
 Custom React Website For Legacy | A Premium Digital Agency
 ====================================================
 
+    Check out the Final Product @ 
+
+- This is a remake of an existing website https://fleava.com/ 
+- I was really inspired by the original website and found a lot of enjoyment attempting to replicate 
+    with React and my own development style.
+
 ### My Intention With This Project
     I chose to build a website for a digital agency because in general, digital agency websites have a 
     certain level of freedom with their design and development methodologies that enable them to truly 
@@ -13,7 +19,7 @@ Custom React Website For Legacy | A Premium Digital Agency
     will combine everything I have learnt thus far in my career.
 
     With this project I hope to gain a deeper understand of:
-        -React, Webpack, SASS, GSAP, Page Transitions, Animations, Application Architecture, 
+        -React, Webpack, SASS, Application Architecture, 
         Organization, Project Management, Time Management, Development Efficiency, 
         Development Quality, Design, 
 
@@ -23,10 +29,4 @@ Custom React Website For Legacy | A Premium Digital Agency
     - Webpack
     - Babel
     - Sass
-    - GSAP
-    - Scroll Magic
 
-
-#### Estimated Time Of Completion
-    - September 9th, 2019
-    - Ambitious but doable.

@@ -4,15 +4,11 @@
 
 //React --
 import React, { Component } from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 //Styles --
 import './App/Styles/Global.scss';
 import './App/Styles/Variables.scss';
-
-//Scripts --
-
-
 
 //Pages --
 import Home from './App/Components/Pages/Home/Home';
@@ -22,17 +18,11 @@ import Expertise from './App/Components/Pages/Expertise/Expertise';
 import Contact from './App/Components/Pages/Contact/Contact';
 import Project1 from './App/Components/Pages/Projects/Project1';
 
-
 //Constants --
 import Logo from './App/Components/Constants/Header/Logo/Logo';
 import MenuIcon from './App/Components/Constants/Header/MenuIcon/MenuIcon';
 import ScrollToTop from './App/Components/Constants/ScrollToTop/ScrollToTop';
 import Navigation from './App/Components/Constants/Navigation/Navigation';
-
-
-
-//Transitions --
-
 
 
 export default class GZ extends Component {
@@ -43,9 +33,6 @@ export default class GZ extends Component {
       }
   }
 
-
-
-
   //Handle Nav State --
     HandleNav = this.HandleNav.bind(this);
     HandleNav(e){
@@ -55,20 +42,10 @@ export default class GZ extends Component {
       
     }
 
-
-
   render() {
     return (
       <ScrollToTop>
         <div className='GroundZero'>
-{/* 
-          <nav className='TempNav'>
-            <Link to='/home' className='TempNav-Link'>Home</Link>
-            <Link to='/about' className='TempNav-Link'>About</Link>
-            <Link to='/works' className='TempNav-Link'>Works</Link>
-            <Link to='/expertise' className='TempNav-Link'>Expertise</Link>
-            <Link to='/contact' className='TempNav-Link'>Contact</Link>
-          </nav> */}
 
             <Logo NavStatus={this.state.NavStatus}
                   />
@@ -80,17 +57,13 @@ export default class GZ extends Component {
                       />
 
             <div className='GZ_Page-Container'>
-              
-              
                 <Switch>
-
                   <Route path='/' exact component={Home}/>
                   <Route path='/about' exact component={About}/>
                   <Route path='/works' exact component={Works}/>
                   <Route path='/expertise' exact component={Expertise}/>
                   <Route path='/contact' exact component={Contact}/>
                   <Route path='/project/jannata-resort' exact component={Project1}/>
-
                 </Switch>
             </div>
 
