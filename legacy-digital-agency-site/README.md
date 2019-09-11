@@ -1,11 +1,11 @@
 Custom React Website For Legacy | A Premium Digital Agency
 ====================================================
 
-    Check out the Final Product @ 
+Check out the Final Product @ https://legacy-digital-agency.web.app/
 
 - This is a remake of an existing website https://fleava.com/ 
 - I was really inspired by the original website and found a lot of enjoyment attempting to replicate 
-    with React and my own development style.
+    it with React and my own development style.
 
 ### My Intention With This Project
     I chose to build a website for a digital agency because in general, digital agency websites have a 

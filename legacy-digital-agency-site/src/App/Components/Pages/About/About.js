@@ -32,8 +32,8 @@ export default function About() {
                 <AboutServices />    
 
                 <div className='About_Company-Logos-Wrap'>
-                    <img src={CompanyLogos} className='About_CompanyLogos'/>        
-                    <img src={CompanyLogosMobile} className='About_CompanyLogosMobile'/>
+                    <div className='About_CompanyLogos'/>        
+                    <div className='About_CompanyLogosMobile'/>
                 </div>
 
                 <div className='About_Black-Section'>

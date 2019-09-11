@@ -8,8 +8,6 @@ import './Expertise.scss';
 import ExpertiseBigImage from './BigImage/ExpertiseBigImage';
 import ExpertiseDesign from './Design/ExpertiseDesign';
 import ExpertiseDevelopment from './Development/ExpertiseDevelopment';
-import DevIcons from '../../../Assets/Expertise/DevIcons.png';
-import DevIconsMobile from '../../../Assets/Expertise/DevIconsMobile.png';
 import ExpertiseBrandDev from './Brand/ExpertiseBrandDev';
 import Footer from '../../Reuseable/Footer/Footer';
 
@@ -36,8 +34,8 @@ export default function Expertise() {
                 <ExpertiseDevelopment />
 
                 <div className='Expertise_DevLogos-Wrap'>
-                    <img src={DevIcons} className='Expertise_DevLogos' />
-                    <img src={DevIconsMobile} className='Expertise_DevLogos-Mobile' />
+                    <div className='Expertise_DevLogos' />
+                    <div className='Expertise_DevLogos-Mobile' />
                 </div>
 
                 <ExpertiseBrandDev />

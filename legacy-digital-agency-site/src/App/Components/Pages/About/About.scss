@@ -36,12 +36,22 @@
         }
 
         .About_CompanyLogos {
-            width: 80%;
+            width: 100%;
+            height: 50vw;
+            background: url('../../../Assets/About/CompanyLogos.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
             margin: 100px 0;
         }
 
         .About_CompanyLogosMobile {
-            width: 80%;
+            width: 100%;
+            height: 110vw;
+            background: url('../../../Assets/About/CompanyLogoMobile.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
             margin: 40px 0;
             display: none;
         }
@@ -68,7 +78,6 @@
         padding-top: 150px;
     }
     .About_Header {
-        // font-size: 280px;
         margin-left: 74px;
     }
 }
@@ -85,7 +94,6 @@
 
 @media screen and (max-width: 900px){
     .About_Header {
-        // font-size: 30vw;
         margin-left: 40px;
         margin-bottom: 100px;
     }
@@ -105,6 +113,7 @@
 @media screen and (max-width: 700px){
     .About_CompanyLogosMobile {
         width: 100%;
+        height: 120vw;
         margin-top: 0px;
     }
 }

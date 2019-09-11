@@ -51,12 +51,22 @@
         }
 
             .Expertise_DevLogos {
+                background: url('../../../Assets/Expertise/DevIcons.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
                 width: 80%;
+                height: 30vw;
             }
             
             .Expertise_DevLogos-Mobile {
+                background: url('../../../Assets/Expertise/DevIconsMobile.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
                 display: none;
-                width: 100%;
+                width: 80%;
+                height: 80vw;
             }
 
 
@@ -90,7 +100,7 @@
         margin-bottom: 80px;
     }
     .Expertise_DevLogos {
-        width: 95%;
+        width: 80%;
     }
 }
 
@@ -99,7 +109,7 @@
         font-size: 10vw;
     }
     .Expertise_Header-SubText {
-        font-size: 16px;;
+        font-size: 16px;
         line-height: 32px;
     }
 }
@@ -110,7 +120,7 @@
     }
     .Expertise_DevLogos-Mobile {
         display: block;
-        width: 850%;
+        height: 100vw;
     }
 }
 
