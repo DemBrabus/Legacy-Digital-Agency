@@ -24,7 +24,8 @@
                 font-size: 8vw;
                 margin-left: 200px;
                 font-weight: 600;
-                background: url('../../../Assets/LetterBG.jpg') no-repeat left center;
+                background: url('../../../Assets/LetterBG.jpg') no-repeat center left;
+                background-size: cover;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
